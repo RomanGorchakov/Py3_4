@@ -24,7 +24,7 @@ class Number(abc.ABC):
         pass
 
 class Integer(Number):
-    def __init__(self, num):
+    def __init__(self, num: int):
         self._num = int(num)
     
     def add(self, n):
@@ -43,7 +43,7 @@ class Integer(Number):
         return self._num ** n
 
 class Real(Number):
-    def __init__(self, num):
+    def __init__(self, num: float):
         self._num = float(num)
     
     def add(self, n):

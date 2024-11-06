@@ -18,7 +18,7 @@ class Soldiers():
     
 class Heroes():
     id_ = 1
-    def __init__(self, team):
+    def __init__(self, team: str):
         self.id_ = Heroes.id_
         Heroes.id_ += 1
 

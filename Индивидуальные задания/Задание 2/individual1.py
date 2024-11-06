@@ -3,7 +3,7 @@
 
 
 class Pair():
-    def __init__(self, first, second):
+    def __init__(self, first: int, second: int):
         self._first = 0
         self._second = 0
     
@@ -20,7 +20,7 @@ class Pair():
             return "Вторая пара больше первой"
     
 class Fraction(Pair):
-    def __init__(self, first, second):
+    def __init__(self, first: float, second: float):
         super().__init__(self, first)
         self._full_first = int(first // 1)
         self._frac_first = round((first % 1), 2)

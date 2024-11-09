@@ -21,19 +21,10 @@ class Pair():
     
 class Fraction(Pair):
     def __init__(self, first: float, second: float):
-        super().__init__(self, first)
         self._full_first = int(first // 1)
         self._frac_first = round((first % 1), 2)
         self._full_second = int(second // 1)
         self._frac_second = round((second % 1), 2)
-    
-    def change_grade(self):
-        new_grade = input("Новый год обучения: ")
-        self.grade = new_grade
-    
-    def add_grade(self, plus):
-        self.grade += plus
-        self.age += plus
 
 if __name__ == "__main__":
     p1 = Pair(20, 50)
